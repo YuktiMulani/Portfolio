@@ -1,2 +1,2 @@
 # Portfolio
-This is Technical portfolio
+This is my Technical portfolio
