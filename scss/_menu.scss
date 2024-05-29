@@ -42,7 +42,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.95;
     visibility: hidden;
 
     &.show{
@@ -63,7 +63,9 @@
     &-nav{
         margin: 0;
         padding: 0;
-        background: darken($primary-color,5);
+        background: url('../img/nav.jpg');
+        background-size: cover;
+        // background: darken(#060007,5);
         list-style: none;
         transform: translate3d(0,-100%,0);
         @include easeOut;
@@ -76,7 +78,8 @@
 
     //Branding Side
     &-branding{
-        background: $primary-color;
+        background: url('../img/Branding.jpg');
+        // background: #232324;
         @include easeOut;
         transform: translate3d(0,100%,0);
         
@@ -86,12 +89,13 @@
         }
 
         .portrait{
+            opacity: 1;
             width: 250px;
             height: 250px;
             background: url('../img/portrait.jpg') no-repeat center center ;
             background-size: cover;
             border-radius: 50%;
-            border: solid 3px $secondary-color;
+            // border: solid 3px $secondary-color;
         }
     }
 
