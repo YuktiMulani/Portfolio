@@ -21,8 +21,15 @@ h1, h2, h3{
 
     &.lg-heading{
         font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     &.sm-heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color, 2),0.5);
@@ -50,10 +57,12 @@ header{
 
     .icons{
         margin-top: 1rem;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a{
             padding: 0.4rem;
-
+            
             &:hover{
                 color:$secondary-color;
                 @include easeOut();
