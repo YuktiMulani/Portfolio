@@ -1,8 +1,8 @@
-$primary-color: #a8d8f7;
-$secondary-color: #51e846;
+$primary-color: #000000;
+$secondary-color: #9622f5;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.4;
+$home-image: url(../img/IMG_2986.jpg);
+$background-opacity: 0.5;
 
 @mixin easeOut{
     transition: all 1s ease-in-out;
@@ -30,6 +30,15 @@ $background-opacity: 0.4;
     }
 }
 
+//set text color
+@function set-text-color($color){
+    @if(lightness($color)>40){
+        @return #000;
+    }
+    @else{
+        @return #fff;
+    }
+}
 
 //Media query mixins
 @mixin mediaSm{

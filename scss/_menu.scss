@@ -11,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: #fff;//set-text-color($primary-color)
         @include easeOut;
     }
 
@@ -63,8 +63,9 @@
     &-nav{
         margin: 0;
         padding: 0;
-        background: url('../img/nav.jpg');
+        background: $primary-color;//url('../img/nav.jpg');
         background-size: cover;
+        opacity: 0.9;
         // background: darken(#060007,5);
         list-style: none;
         transform: translate3d(0,-100%,0);
@@ -78,8 +79,8 @@
 
     //Branding Side
     &-branding{
-        background: url('../img/Branding.jpg');
-        // background: #232324;
+        //background: url('../img/Branding.jpg');
+        background: #232324;
         @include easeOut;
         transform: translate3d(0,100%,0);
         
@@ -120,7 +121,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: #fff; //set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
         &:hover{
