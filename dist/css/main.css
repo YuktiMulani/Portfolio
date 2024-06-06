@@ -97,7 +97,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #000000;
+  background: url(../img/b2.jpg);
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
@@ -106,7 +106,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/IMG_2986.jpg);
+    background: url(../img/b2.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -257,6 +257,36 @@ main {
   background: #1a1a1a;
   color: #fff;
   height: 60px; }
+
+#about:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 150%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5); }
+
+#work:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 300%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5); }
+
+#contact:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5); }
 
 @media screen and (min-width: 1171px) {
   .projects {
