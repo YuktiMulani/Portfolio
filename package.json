@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "description": "This is my Technical portfolio",
   "main": "index.js",
+  "homepage": "https://YuktiMulani.github.io/Portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "build": "sass --watch scss:dist/css --no-source-map"
+    "deploy":"gh-pages -d dist"
   },
   "keywords": [],
   "author": "Yukti Mulani",
   "license": "MIT",
-  "devDependencies": {
-    "sass": "^1.77.4"
-  },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "node-sass": "^9.0.0"
   }
 }
