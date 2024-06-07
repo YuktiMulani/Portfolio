@@ -73,6 +73,18 @@
 
 // Smart Phones
 @include mediaSm{
+    main{
+        flex-direction: column; /* Adjust flex direction for better stacking */
+        padding: 1rem; /* Add some padding for better spacing */
+        text-align: left; /* Align text to the left for readability */
+
+        .lg-heading{
+            font-size: 1.5rem; /* Adjust font size for smaller screens */
+            margin-bottom: 0.5rem; /* Reduce margin for better spacing */
+            line-height: 1.2; /* Adjust line-height for better readability */
+        }
+    }
+
     main#home h1{
         margin-top: 10vh;
 
@@ -80,5 +92,9 @@
 
     .projects{
         grid-template-columns: 1fr;
+    }
+
+    .about-info{
+        justify-content: center;
     }
 }
