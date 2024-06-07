@@ -4,16 +4,13 @@
   "description": "This is my Technical portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass": "sass --watch scss:dist/css --no-source-map",
     "build": "npm run sass"
   },
   "keywords": [],
   "author": "Yukti Mulani",
   "license": "MIT",
-  "dependencies": {
-    "sass": "^1.77.4"
-  },
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "sass": "^1.77.4"
   }
 }
